@@ -12,6 +12,25 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+
+.links {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  padding: 0px; /* this brought logo and links together.  used inspect element to find there was padding*/
+}
+
+.right, .left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
 }
 
 .profile-image {
