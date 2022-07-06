@@ -4,7 +4,13 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  display: flex;
+  flex-direction:  column;
+  justify-content: space-evenly;
+
+ 
 }
 
 img {
@@ -16,6 +22,13 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
@@ -29,21 +42,33 @@ input {
 .header, .footer {
   display:flex;
   flex-direction: row;
+  padding: 5px;
 }
 .left-links, .right-links {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-
   display: flex;
-
+  padding: 0;
+  margin: 5px;
 }
 
 .right-links {
   margin-left: auto;
 }
+.left-links {
+  margin-right: auto;
+}
 
 .right-links a, .left-links a {
   text-decoration: none;
-  color: gray;
+  color: rgb(117, 117, 117);
+  padding: 10px;
+}
+
+.header {
+  margin-bottom: auto;
+}
+
+.footer {
+  background-color: #eee;
+ margin-top: auto;
 }
